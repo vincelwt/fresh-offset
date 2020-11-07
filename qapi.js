@@ -10,7 +10,8 @@ export default {
 				"5fa6fdfc88062c001f4a6c07",
 				"5fa6fdfc88062c001f4a6c0b",
 				"5fa6fdfc88062c001f4a6c09",
-				"5fa6fdfc88062c001f4a6c0d"
+				"5fa6fdfc88062c001f4a6c0d",
+				"5fa6fff0badc03001fb0abce"
 			]
 		},
 		"5fa6fdfc88062c001f4a6c03": {
@@ -77,6 +78,11 @@ export default {
 				"description": "It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something bigger. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.",
 				"og:description": "It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something bigger. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference."
 			}
+		},
+		"5fa6fff0badc03001fb0abce": {
+			"id": "5fa6fff0badc03001fb0abce",
+			"pageUrl": "sign-up",
+			"name": "Sign Up"
 		}
 	},
 	"mode": "production",
