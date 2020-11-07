@@ -12,7 +12,7 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Section background="--color-darkL2" padding="64px 0" sm-padding="40px 0">
+		<Section background="--color-light" padding="64px 0" sm-padding="40px 0">
 			<Stack>
 				<StackItem width="50%" lg-width="100%">
 					<Override
@@ -32,7 +32,7 @@ export default (() => {
 					>
 						SIGN UP
 					</Text>
-					<Text as="h2" margin="12px 0" font="--headline2" md-font="--headline3">
+					<Text as="h2" margin="12px 0 40px 0" font="--headline2" md-font="--headline3">
 						You are one step away from being carbon neutral.
 					</Text>
 					<Text>
