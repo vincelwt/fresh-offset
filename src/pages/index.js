@@ -3,8 +3,6 @@ import theme from "theme";
 import { Theme, Link, Image, Button, Text, Box, Icon } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, StackItem, Stack, Section } from "@quarkly/components";
-import * as Components from "components";
-import { MdMenu } from "react-icons/md";
 import { DiBootstrap, DiBingSmall, DiCssTricks, DiEnvato, DiGithubBadge } from "react-icons/di";
 export default (() => {
 	return <Theme theme={theme}>
@@ -43,75 +41,7 @@ export default (() => {
 				</StackItem>
 				<StackItem width="50%" display="block" quarkly-title="Menu" md-width="25%">
 					<Override slot="StackItemContent" align-items="center" justify-content="center" md-justify-content="flex-end" />
-					{"        "}
-					<Components.BurgerMenu>
-						<Override
-							slot="menu"
-							lg-transform="translateY(0px) translateX(0px)"
-							lg-transition="transform 400ms ease 0s"
-							md-position="fixed"
-							display="flex"
-							md-left={0}
-							md-top={0}
-							md-width="100%"
-							md-height="100%"
-							padding="0px 0 0px 0"
-						>
-							<Override
-								slot="item"
-								text-transform="uppercase"
-								text-align="center"
-								padding="8px 20px 8px 20px"
-								md-padding="16px 40px 16px 40px"
-							/>
-							<Override slot="item-404" lg-display="none" display="none" />
-							<Override slot="item-index" lg-display="none" display="none" />
-							<Override
-								slot="link"
-								md-color="--dark"
-								md-opacity=".5"
-								md-transition="opacity .15s ease 0s"
-								md-hover-opacity="1"
-								md-active-opacity="1"
-								md-font="16px/24px sans-serif"
-								font="--base"
-								text-decoration-line="initial"
-								color="--dark"
-								opacity=".5"
-								transition="opacity .15s ease 0s"
-								hover-opacity="1"
-								letter-spacing="0.5px"
-								text-transform="initial"
-							/>
-							<Override
-								slot="link-active"
-								md-opacity="1"
-								md-cursor="default"
-								opacity="1"
-								color="--primary"
-								cursor="default"
-							/>
-							<Override slot="link-about">
-								About
-							</Override>
-							<Override slot="link-team">
-								Team
-							</Override>
-						</Override>
-						<Override slot="icon,icon-close" category="md" icon={MdMenu} />
-						<Override slot="icon" category="md" icon={MdMenu} size="36px" />
-						<Override
-							slot="menu-open"
-							md-top={0}
-							md-bottom={0}
-							md-display="flex"
-							md-flex-direction="column"
-							md-align-items="center"
-							md-justify-content="center"
-						/>
-						<Override slot="icon-open" md-position="fixed" md-top="24px" md-right="calc(4% + 4px)" />
-					</Components.BurgerMenu>
-					{"    "}
+					{"        "}{"    "}
 				</StackItem>
 				<StackItem display="flex" quarkly-title="Side" width="25%" md-display="none">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-end" />
@@ -146,7 +76,7 @@ export default (() => {
 			<Override
 				slot="SectionContent"
 				width="100%"
-				background="linear-gradient(180deg,rgba(155, 108, 252, 0.15) 0%,transparent 100%) 0 0 no-repeat,#191C23 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-works-angle.svg?v=2020-11-06T16:36:54.345Z) center center/cover repeat scroll padding-box"
+				background="linear-gradient(180deg,rgba(155, 108, 252, 0.15) 0%,transparent 100%) 0 0 no-repeat,#191C23 url(https://images.unsplash.com/photo-1534996858221-380b92700493?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&w=2000) center center/cover repeat scroll padding-box"
 				height="620px"
 				align-items="center"
 				justify-content="center"
@@ -167,7 +97,7 @@ export default (() => {
 				lg-text-align="center"
 				lg-font="--headline2"
 			>
-				Become a carbon neutral today.
+				Become carbon neutral today.
 			</Text>
 			<Text
 				font="--lead"
@@ -178,10 +108,10 @@ export default (() => {
 				opacity="0.7"
 				md-text-align="center"
 			>
-				Fresh Offset makes it easy to offset all your business and employees emissions, for $5 / employee / month.
+				We make it simple to offset all your business and employees emissions, for $5 / employee / month.
 			</Text>
 			<Link
-				href="/about"
+				href="/signup"
 				text-decoration-line="initial"
 				color="--darkL2"
 				background="--color-light"
@@ -238,7 +168,7 @@ export default (() => {
 				lg-font="--lead"
 				sm-font="--base"
 			>
-				We empower creators to do their best work while maintaining our uncompromising values while we grow.
+				Climate change is happening now. There is no time left. We have to do something.
 			</Text>
 		</Section>
 		<Section
@@ -307,7 +237,7 @@ export default (() => {
 						lg-margin="0px 0px 18px 0px"
 						sm-font="--base"
 					>
-						It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something bigger. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.
+						Our beautiful planet is under attack. And we are the culprits.{" "}
 					</Text>
 					<Link
 						href="/about"
@@ -340,194 +270,7 @@ export default (() => {
 					{"        "}
 					<Box
 						width="100%"
-						background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-first.svg?v=2020-11-06T16:37:39.391Z) center center/100% no-repeat"
-						margin="0px 0px 0px 0px"
-						padding="0px 0px 60% 0px"
-						height="0px"
-						hover-background="--color-lightD2 url(https://artemzhigalin.ru/src/default-website-illustration-sea.svg) center center/110% no-repeat"
-						transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
-					/>
-					{"    "}
-				</StackItem>
-			</Stack>
-			<Stack margin="80px -16px -16px -16px" lg-margin="50px -16px -16px -16px" md-margin="30px -16px -16px -16px">
-				{"        "}
-				<StackItem
-					width="60%"
-					display="flex"
-					padding="0px 0px 0px 0px"
-					miniPk-width="59%"
-					lg-width="100%"
-					lg-margin="0px 0px 10px 0px"
-					quarkly-title="Illustration"
-				>
-					<Override slot="StackItemContent" lg-width="100%" />
-					{"        "}
-					<Box
-						width="100%"
-						background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-second.svg?v=2020-11-06T17:14:59.136Z) center center/100% no-repeat"
-						margin="0px 0px 0px 0px"
-						padding="0px 0px 60% 0px"
-						height="0px"
-						hover-background="--color-lightD2 url(https://artemzhigalin.ru/src/default-website-illustration-sea.svg) center center/110% no-repeat"
-						transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
-					/>
-					{"    "}
-				</StackItem>
-				<StackItem width="40%" display="flex" lg-margin="0px 0px 0px 0px" lg-width="100%">
-					<Override
-						slot="StackItemContent"
-						flex-direction="column"
-						justify-content="flex-start"
-						lg-align-items="flex-start"
-						align-items="flex-start"
-						padding="0px 0px 0px 30px"
-						lg-padding="0px 0px 0px 0px"
-					/>
-					{"        "}
-					<Text
-						font="--base"
-						margin="0px 0px 10px 0px"
-						letter-spacing="1px"
-						color="--dark"
-						opacity="0.6"
-						lg-margin="0px 0px 6px 0px"
-						lg-text-align="center"
-						quarkly-title="Title"
-						text-transform="uppercase"
-					>
-						expertise
-					</Text>
-					<Text
-						font="--headline2"
-						margin="0px 0px 28px 0px"
-						color="--dark"
-						lg-text-align="center"
-						lg-margin="0px 0px 18px 0px"
-						sm-font="--headline3"
-						md-font="--headline3"
-					>
-						Why Choose Us
-					</Text>
-					<Text
-						font="--lead"
-						margin="0px 0px 20px 0px"
-						color="--darkL2"
-						opacity="0.6"
-						sm-text-align="left"
-						lg-text-align="left"
-						lg-margin="0px 0px 18px 0px"
-						sm-font="--base"
-					>
-						It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something bigger. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.
-					</Text>
-					<Link
-						href="/team"
-						text-decoration-line="initial"
-						color="--light"
-						padding="8px 18px 8px 18px"
-						font="--base"
-						letter-spacing="0.5px"
-						text-align="center"
-						margin="9px 0px 0px 0px"
-						background="--color-primary"
-						hover-transform="translateY(-4px)"
-						transition="transform --transitionDuration-fast --transitionTimingFunction-easeInOut 0s"
-					>
-						Read More
-					</Link>
-					{"    "}
-				</StackItem>
-			</Stack>
-			<Stack margin="80px -16px -16px -16px" lg-margin="50px -16px -16px -16px" md-margin="30px -16px -16px -16px">
-				{"    "}
-				<StackItem
-					width="40%"
-					display="flex"
-					lg-width="100%"
-					lg-order="2"
-					lg-margin="0px 0px 0px 0px"
-					box-sizing="border-box"
-				>
-					<Override
-						slot="StackItemContent"
-						flex-direction="column"
-						justify-content="flex-start"
-						lg-align-items="flex-start"
-						align-items="flex-start"
-						box-sizing="border-box"
-						padding="0px 30px 0px 0px"
-						lg-padding="0px 0px 0px 0px"
-					/>
-					{"        "}
-					<Text
-						font="--base"
-						margin="0px 0px 10px 0px"
-						letter-spacing="1px"
-						color="--dark"
-						opacity="0.6"
-						lg-text-align="center"
-						lg-margin="0px 0px 6px 0px"
-						quarkly-title="Title"
-						text-transform="uppercase"
-					>
-						CONTACTS
-					</Text>
-					<Text
-						font="--headline2"
-						margin="0px 0px 28px 0px"
-						color="--dark"
-						lg-text-align="center"
-						lg-margin="0px 0px 18px 0px"
-						sm-text-align="left"
-						sm-font="--headline3"
-						md-font="--headline3"
-					>
-						Where We Work
-					</Text>
-					<Text
-						font="--lead"
-						margin="0px 0px 20px 0px"
-						color="--darkL2"
-						opacity="0.6"
-						lg-text-align="left"
-						lg-margin="0px 0px 18px 0px"
-						sm-font="--base"
-					>
-						It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something bigger. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.
-					</Text>
-					<Link
-						href="/contact"
-						text-decoration-line="initial"
-						color="--light"
-						padding="8px 18px 8px 18px"
-						font="--base"
-						letter-spacing="0.5px"
-						transition="transform --transitionDuration-fast --transitionTimingFunction-easeInOut 0s"
-						text-align="center"
-						margin="9px 0px 0px 0px"
-						background="--color-primary"
-						hover-transform="translateY(-4px)"
-					>
-						Read More
-					</Link>
-					{"    "}
-				</StackItem>
-				{"    "}
-				<StackItem
-					width="60%"
-					display="flex"
-					padding="0px 0px 0px 0px"
-					miniPk-width="59%"
-					lg-width="100%"
-					lg-order="1"
-					lg-margin="0px 0px 10px 0px"
-					quarkly-title="Illustration"
-				>
-					{"        "}
-					<Box
-						width="100%"
-						background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-third.svg?v=2020-11-06T17:15:50.700Z) center center/100% no-repeat"
+						background="--color-lightD2 url(https://images.unsplash.com/photo-1462331321792-cc44368b8894?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&w=2000) center center/100% no-repeat"
 						margin="0px 0px 0px 0px"
 						padding="0px 0px 60% 0px"
 						height="0px"
@@ -566,7 +309,7 @@ export default (() => {
 				lg-text-align="center"
 				quarkly-title="Title"
 			>
-				what we create
+				The projects
 			</Text>
 			<Text
 				font="--headline2"
@@ -578,7 +321,7 @@ export default (() => {
 				sm-font="--headline3"
 				md-font="--headline3"
 			>
-				Our Works
+				Support the reforestation
 			</Text>
 			<Stack width="100%">
 				{"    "}
@@ -691,7 +434,7 @@ export default (() => {
 				{"    "}
 			</Stack>
 			<Link
-				href="/contact"
+				href="pachama.com/projects"
 				text-decoration-line="initial"
 				color="--light"
 				padding="8px 18px 8px 18px"
@@ -704,6 +447,7 @@ export default (() => {
 				hover-transform="translateY(-4px)"
 				lg-margin="24px 0px 0px 0px"
 				md-margin="36px 0px 0px 0px"
+				target="_blank"
 			>
 				View More
 			</Link>
@@ -740,7 +484,7 @@ export default (() => {
 				lg-margin="0px 0px 6px 0px"
 				quarkly-title="Title"
 			>
-				We're here to help
+				What do
 			</Text>
 			<Text
 				font="--headline2"
@@ -807,7 +551,7 @@ export default (() => {
 						text-align="center"
 						md-text-align="left"
 					>
-						Have any questions?
+						Does the mail scanning only work with Gmail / Gsuite ?
 					</Text>
 					<Text
 						font="--base"
@@ -819,7 +563,7 @@ export default (() => {
 						md-text-align="left"
 						sm-margin="8px 0px 0px 0px"
 					>
-						It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something bigger.
+						At the moment, yes, only Gmail is supported. We are working on supporting other services for automatic reporting.{" "}
 					</Text>
 					{"    "}
 				</StackItem>
@@ -839,7 +583,7 @@ export default (() => {
 						text-align="center"
 						md-text-align="left"
 					>
-						Have any questions?
+						Does it work for solo entrepreneurs?
 					</Text>
 					<Text
 						font="--base"
@@ -851,7 +595,7 @@ export default (() => {
 						md-text-align="left"
 						sm-margin="8px 0px 0px 0px"
 					>
-						It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something bigger.
+						Yes definitely! Just skip the invite employees’ step. The pricing stays at 5$ / month.
 					</Text>
 					{"    "}
 				</StackItem>
@@ -871,7 +615,7 @@ export default (() => {
 						text-align="center"
 						md-text-align="left"
 					>
-						Have any questions?
+						Where does the money go to?{" "}
 					</Text>
 					<Text
 						font="--base"
@@ -883,7 +627,7 @@ export default (() => {
 						md-text-align="left"
 						sm-margin="8px 0px 0px 0px"
 					>
-						It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something bigger.
+						Mainly toward planting trees and fighting deforestation. Pachama (our carbon offsetting partner) uses machine learning to ensure the money goes toward the right projects. Find in detail what they do here.
 					</Text>
 					{"    "}
 				</StackItem>
@@ -911,7 +655,7 @@ export default (() => {
 				lg-margin="0px 0px 6px 0px"
 				quarkly-title="Title"
 			>
-				They trust us
+				The time is now
 			</Text>
 			<Text
 				font="--headline2"
@@ -923,7 +667,7 @@ export default (() => {
 				sm-font="--headline3"
 				md-font="--headline3"
 			>
-				Our Customers
+				They pledged to become carbon neutral.
 			</Text>
 			<Stack width="100%" lg-justify-content="center" sm-flex-direction="column">
 				{"    "}
@@ -1130,7 +874,7 @@ export default (() => {
 						align-items="center"
 						justify-content="center"
 						height="480px"
-						background="linear-gradient(180deg,rgba(24, 29, 34, 0.5) 0%,transparent 100%) 0 0 no-repeat,--color-lightD1 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-fireworks.svg?v=2020-11-06T17:22:27.801Z) center center/cover no-repeat"
+						background="linear-gradient(180deg,rgba(24, 29, 34, 0.5) 0%,transparent 100%) 0 0 no-repeat,--color-lightD1 url(https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&w=2000) center center/cover no-repeat"
 						flex-direction="column"
 						md-height="360px"
 						padding="36px 24px 36px 24px"
@@ -1146,7 +890,7 @@ export default (() => {
 						color="--light"
 						md-font="--headline3"
 					>
-						Make It Work.
+						The time is now
 					</Text>
 					<Text
 						margin="0px 0px 28px 0px"
@@ -1157,7 +901,7 @@ export default (() => {
 						color="--light"
 						max-width="720px"
 					>
-						Good design adds value faster than it adds cost.
+						Now you don't have any more excuses.
 					</Text>
 					<Button
 						padding="8px 36px 8px 36px"
