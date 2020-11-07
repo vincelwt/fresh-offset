@@ -55,13 +55,13 @@ export default (() => {
 					<Override slot="StackItemContent" flex-direction="column" />
 					<Stack>
 						<StackItem width="100%" lg-width="33.3%" md-width="100%">
-							<Override slot="StackItemContent" padding-bottom="100%" background="url(https://images.unsplash.com/photo-1575999080555-3f7a698dd8d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80) center/cover" />
+							<Override slot="StackItemContent" padding-bottom="100%" background="url(https://images.unsplash.com/photo-1483651646696-c1b5fe39fc0e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&h=2000) center/cover" />
 						</StackItem>
 						<StackItem width="50%" lg-width="33.3%" md-width="50%" sm-width="100%">
 							<Override slot="StackItemContent" padding-bottom="100%" background="url(https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&w=2000) center/cover" />
 						</StackItem>
 						<StackItem width="50%" lg-width="33.3%" md-width="50%" sm-width="100%">
-							<Override slot="StackItemContent" padding-bottom="100%" background="url(https://images.unsplash.com/photo-1575999502951-4ab25b5ca889?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1568&q=80) center/cover" />
+							<Override slot="StackItemContent" padding-bottom="100%" background="url(https://images.unsplash.com/photo-1503924087716-07cbd5f49b21?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&h=2000) center/cover" />
 						</StackItem>
 					</Stack>
 				</StackItem>

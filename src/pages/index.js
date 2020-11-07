@@ -452,6 +452,44 @@ export default (() => {
 				View More
 			</Link>
 		</Section>
+		<Section padding="64px 0" sm-padding="40px 0" color="--dark">
+			<Text as="h1" font="--headline1" margin="0 0 24px 0">
+				How it works
+			</Text>
+			<Stack>
+				<StackItem width="33.33%" md-width="100%">
+					<Override slot="StackItemContent" flex-direction="column" />
+					<Text as="h3" font="--headline3" margin="12px 0">
+						1.
+					</Text>
+					<Text as="p" font="--base" margin="12px 0" color="--greyD2">
+						Sign Up and add your employees (we only need their emails).
+					</Text>
+				</StackItem>
+				<StackItem width="33.33%" md-width="100%">
+					<Override slot="StackItemContent" flex-direction="column" />
+					<Text as="h3" font="--headline3" margin="12px 0">
+						2.
+					</Text>
+					<Text as="p" font="--base" margin="12px 0" color="--greyD2">
+						Your employees are invited to connect their Gmail accounts and answer a questionnaire so we can estimate their average carbon emissions.
+						<div>
+							<br />
+							<br />
+						</div>
+					</Text>
+				</StackItem>
+				<StackItem width="33.33%" md-width="100%">
+					<Override slot="StackItemContent" flex-direction="column" />
+					<Text as="h3" font="--headline3" margin="12px 0">
+						3.
+					</Text>
+					<Text as="p" font="--base" margin="12px 0" color="--greyD2">
+						We'll scan their emails for flights, trains and other impactful emissions to make sure
+					</Text>
+				</StackItem>
+			</Stack>
+		</Section>
 		<Section
 			padding="90px 0px 100px 0px"
 			sm-padding="24px 0 24px 0"
@@ -519,7 +557,7 @@ export default (() => {
 						text-align="center"
 						md-text-align="left"
 					>
-						Have any questions?
+						Does it work for remote companies?
 					</Text>
 					<Text
 						font="--base"
@@ -531,7 +569,7 @@ export default (() => {
 						md-text-align="left"
 						sm-margin="8px 0px 0px 0px"
 					>
-						It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something bigger.
+						Yes! We designed our product with all companies in mind. By offsetting your employee's personal emissions, you'll{" "}
 					</Text>
 					{"    "}
 				</StackItem>
