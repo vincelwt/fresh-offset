@@ -36,7 +36,7 @@ export default (() => {
 						You are one step away from being carbon neutral.
 					</Text>
 					<Text>
-						Your Company
+						Your Company Name
 					</Text>
 					<Input placeholder="Awesome Inc." type="text" />
 					<Text>
