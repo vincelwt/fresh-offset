@@ -3,8 +3,6 @@ import theme from "theme";
 import { Theme, Link, Image, Button, Text } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, StackItem, Stack, Section } from "@quarkly/components";
-import * as Components from "components";
-import { MdMenu } from "react-icons/md";
 export default (() => {
 	return <Theme theme={theme}>
 		<Helmet>
@@ -26,69 +24,7 @@ export default (() => {
 				</StackItem>
 				<StackItem width="50%" display="block" quarkly-title="Menu" md-width="25%">
 					<Override slot="StackItemContent" align-items="center" justify-content="center" md-justify-content="flex-end" />
-					{"        "}
-					<Components.BurgerMenu>
-						<Override
-							slot="menu"
-							lg-transform="translateY(0px) translateX(0px)"
-							lg-transition="transform 400ms ease 0s"
-							md-position="fixed"
-							display="flex"
-							md-left={0}
-							md-top={0}
-							md-width="100%"
-							md-height="100%"
-							padding="0px 0 0px 0"
-						>
-							<Override
-								slot="item"
-								text-transform="uppercase"
-								text-align="center"
-								padding="8px 20px 8px 20px"
-								md-padding="16px 40px 16px 40px"
-							/>
-							<Override slot="item-404" lg-display="none" display="none" />
-							<Override slot="item-index" lg-display="none" display="none" />
-							<Override
-								slot="link"
-								md-color="--dark"
-								md-opacity=".5"
-								md-transition="opacity .15s ease 0s"
-								md-hover-opacity="1"
-								md-active-opacity="1"
-								md-font="16px/24px sans-serif"
-								font="--base"
-								text-decoration-line="initial"
-								color="--dark"
-								opacity=".5"
-								transition="opacity .15s ease 0s"
-								hover-opacity="1"
-								letter-spacing="0.5px"
-								text-transform="initial"
-							/>
-							<Override
-								slot="link-active"
-								md-opacity="1"
-								md-cursor="default"
-								opacity="1"
-								color="--primary"
-								cursor="default"
-							/>
-						</Override>
-						<Override slot="icon,icon-close" category="md" icon={MdMenu} />
-						<Override slot="icon" category="md" icon={MdMenu} size="36px" />
-						<Override
-							slot="menu-open"
-							md-top={0}
-							md-bottom={0}
-							md-display="flex"
-							md-flex-direction="column"
-							md-align-items="center"
-							md-justify-content="center"
-						/>
-						<Override slot="icon-open" md-position="fixed" md-top="24px" md-right="calc(4% + 4px)" />
-					</Components.BurgerMenu>
-					{"    "}
+					{"        "}{"    "}
 				</StackItem>
 				<StackItem display="flex" quarkly-title="Side" width="25%" md-display="none">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-end" />
@@ -146,7 +82,7 @@ export default (() => {
 						text-align="center"
 						padding="0px 16px 0px 16px"
 					>
-						This is not the page you're looking for. Move along, move along.
+						This page wasn't found. Let's go back to the home page.
 					</Text>
 					<Link
 						href="/"

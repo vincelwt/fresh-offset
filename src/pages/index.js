@@ -3,6 +3,7 @@ import theme from "theme";
 import { Theme, Link, Image, Button, Text, Box, Icon } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, StackItem, Stack, Section } from "@quarkly/components";
+import * as Components from "components";
 import { DiBootstrap, DiBingSmall, DiCssTricks, DiEnvato, DiGithubBadge } from "react-icons/di";
 export default (() => {
 	return <Theme theme={theme}>
@@ -168,7 +169,7 @@ export default (() => {
 				lg-font="--lead"
 				sm-font="--base"
 			>
-				Climate change is happening now. There is no time left. We have to do something.
+				Climate change is happening now. We started Fresh because we found it difficult to know how to reduce our daily impact. Now we help you and your team do it.
 			</Text>
 		</Section>
 		<Section
@@ -281,6 +282,44 @@ export default (() => {
 				</StackItem>
 			</Stack>
 		</Section>
+		<Section padding="64px 0" sm-padding="40px 0" color="--dark">
+			<Text as="h1" font="--headline1" margin="0 0 24px 0">
+				How it works:
+			</Text>
+			<Stack>
+				<StackItem width="33.33%" md-width="100%">
+					<Override slot="StackItemContent" flex-direction="column" />
+					<Text as="h3" font="--headline3" margin="12px 0" xl-font="--headline2">
+						1.
+					</Text>
+					<Text as="p" font="--base" margin="12px 0" color="--greyD2">
+						Sign Up and add your employees (we only need their emails).
+					</Text>
+				</StackItem>
+				<StackItem width="33.33%" md-width="100%">
+					<Override slot="StackItemContent" flex-direction="column" />
+					<Text as="h3" font="--headline3" margin="12px 0" xl-font="--headline2">
+						2.
+					</Text>
+					<Text as="p" font="--base" margin="12px 0" color="--greyD2">
+						Your employees are invited to connect their Gmail accounts and answer a questionnaire so we can estimate their average carbon emissions.
+						<div>
+							<br />
+							<br />
+						</div>
+					</Text>
+				</StackItem>
+				<StackItem width="33.33%" md-width="100%">
+					<Override slot="StackItemContent" flex-direction="column" />
+					<Text as="h3" font="--headline3" margin="12px 0" xl-font="--headline2">
+						3.
+					</Text>
+					<Text as="p" font="--base" margin="12px 0" color="--greyD2">
+						We'll scan their emails for flights, trains and other impactful emissions to make sure
+					</Text>
+				</StackItem>
+			</Stack>
+		</Section>
 		<Section
 			padding="100px 0px 100px 0px"
 			sm-padding="24px 0 24px 0"
@@ -340,6 +379,7 @@ export default (() => {
 						height="0px"
 						hover-background="--color-lightD2 url(https://artemzhigalin.ru/src/default-website-illustration-sea.svg) center center/110% no-repeat"
 						transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
+						xl-background="--color-lightD2 url(https://images.unsplash.com/photo-1542380536-3eb944a532d8?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&h=2000) center center/100% no-repeat"
 					/>
 					{"    "}
 				</StackItem>
@@ -358,6 +398,7 @@ export default (() => {
 						height="0px"
 						hover-background="--color-lightD2 url(https://artemzhigalin.ru/src/default-website-illustration-sea.svg) center center/110% no-repeat"
 						transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
+						xl-background="--color-lightD2 url(https://images.unsplash.com/photo-1534861542011-27e852f7c9f5?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&w=2000) center center/cover no-repeat"
 					/>
 				</StackItem>
 				<StackItem
@@ -375,6 +416,7 @@ export default (() => {
 						height="0px"
 						hover-background="--color-lightD2 url(https://artemzhigalin.ru/src/default-website-illustration-sea.svg) center center/110% no-repeat"
 						transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
+						xl-background="--color-lightD2 url(https://images.unsplash.com/photo-1602484894924-75eddc89d32b?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&w=2000) center center/100% no-repeat"
 					/>
 					{"    "}
 				</StackItem>
@@ -393,6 +435,7 @@ export default (() => {
 						height="0px"
 						hover-background="--color-lightD2 url(https://artemzhigalin.ru/src/default-website-illustration-sea.svg) center center/110% no-repeat"
 						transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
+						xl-background="--color-lightD2 url(https://images.unsplash.com/photo-1603538978238-b6279baca5d6?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&w=2000) center center/100% no-repeat"
 					/>
 					{"    "}
 				</StackItem>
@@ -411,6 +454,7 @@ export default (() => {
 						height="0px"
 						hover-background="--color-lightD2 url(https://artemzhigalin.ru/src/default-website-illustration-sea.svg) center center/110% no-repeat"
 						transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
+						xl-background="--color-lightD2 url(https://images.unsplash.com/photo-1471771450139-6bfdb4b2609a?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&w=2000) center center/100% no-repeat"
 					/>
 				</StackItem>
 				<StackItem
@@ -428,66 +472,11 @@ export default (() => {
 						height="0px"
 						hover-background="--color-lightD2 url(https://artemzhigalin.ru/src/default-website-illustration-sea.svg) center center/110% no-repeat"
 						transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
+						xl-background="--color-lightD2 url(https://images.unsplash.com/photo-1535114224187-93c1f6e37664?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&w=2000) center center/100% no-repeat"
 					/>
 					{"    "}
 				</StackItem>
 				{"    "}
-			</Stack>
-			<Link
-				href="pachama.com/projects"
-				text-decoration-line="initial"
-				color="--light"
-				padding="8px 18px 8px 18px"
-				font="--base"
-				letter-spacing="0.5px"
-				transition="transform --transitionDuration-fast --transitionTimingFunction-easeInOut 0s"
-				text-align="center"
-				margin="48px 0px 0px 0px"
-				background="--color-primary"
-				hover-transform="translateY(-4px)"
-				lg-margin="24px 0px 0px 0px"
-				md-margin="36px 0px 0px 0px"
-				target="_blank"
-			>
-				View More
-			</Link>
-		</Section>
-		<Section padding="64px 0" sm-padding="40px 0" color="--dark">
-			<Text as="h1" font="--headline1" margin="0 0 24px 0">
-				How it works
-			</Text>
-			<Stack>
-				<StackItem width="33.33%" md-width="100%">
-					<Override slot="StackItemContent" flex-direction="column" />
-					<Text as="h3" font="--headline3" margin="12px 0">
-						1.
-					</Text>
-					<Text as="p" font="--base" margin="12px 0" color="--greyD2">
-						Sign Up and add your employees (we only need their emails).
-					</Text>
-				</StackItem>
-				<StackItem width="33.33%" md-width="100%">
-					<Override slot="StackItemContent" flex-direction="column" />
-					<Text as="h3" font="--headline3" margin="12px 0">
-						2.
-					</Text>
-					<Text as="p" font="--base" margin="12px 0" color="--greyD2">
-						Your employees are invited to connect their Gmail accounts and answer a questionnaire so we can estimate their average carbon emissions.
-						<div>
-							<br />
-							<br />
-						</div>
-					</Text>
-				</StackItem>
-				<StackItem width="33.33%" md-width="100%">
-					<Override slot="StackItemContent" flex-direction="column" />
-					<Text as="h3" font="--headline3" margin="12px 0">
-						3.
-					</Text>
-					<Text as="p" font="--base" margin="12px 0" color="--greyD2">
-						We'll scan their emails for flights, trains and other impactful emissions to make sure
-					</Text>
-				</StackItem>
 			</Stack>
 		</Section>
 		<Section
@@ -522,7 +511,7 @@ export default (() => {
 				lg-margin="0px 0px 6px 0px"
 				quarkly-title="Title"
 			>
-				What do
+				Any questions
 			</Text>
 			<Text
 				font="--headline2"
@@ -746,7 +735,7 @@ export default (() => {
 						md-margin="16px 0px 0px 0px"
 						sm-margin="0px 0px 0px 0px"
 					>
-						Company Name
+						Apple
 					</Text>
 					{"    "}
 				</StackItem>
@@ -784,7 +773,7 @@ export default (() => {
 						md-margin="16px 0px 0px 0px"
 						sm-margin="0px 0px 0px 0px"
 					>
-						Company Name
+						Nespresso
 					</Text>
 					{"    "}
 				</StackItem>
@@ -966,29 +955,27 @@ export default (() => {
 				{"    "}
 			</Stack>
 		</Section>
-		<Section
-			margin="0 0 0 0"
-			padding="16px 0 16px 0"
-			box-sizing="border-box"
-			quarkly-title="Footer"
-			justify-content="center"
-		>
-			<Override
-				slot="SectionContent"
-				width="100%"
-				margin="0px 32px 0px 32px"
-				md-margin="0px 16px 0px 16px"
-				min-width="auto"
-			/>
-			<Stack>
-				{"    "}
-				<StackItem display="flex" quarkly-title="Side" width="75%" md-width="50%">
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-end" />
-					{"   "}
-				</StackItem>
-				{"    "}
-			</Stack>
-		</Section>
+		<Components.Footer>
+			<Override slot="text">
+				<Link
+					href="https://quarkly.io/"
+					font="normal 500 12px/20px --fontFamily-googleMontserrat"
+					color="#1a1b1f"
+					opacity="0.6"
+					text-decoration-line="initial"
+					text-align="left"
+					margin="1px 0px 0px 10px"
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+				>
+					Powered by Quarkly
+				</Link>
+			</Override>
+		</Components.Footer>
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
