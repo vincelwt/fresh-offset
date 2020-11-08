@@ -1,10 +1,9 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Button, Text, Input, Box } from "@quarkly/widgets";
+import { Theme, Link, Text, Input, Button, Box } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Override, StackItem, Stack, Section, SocialMedia } from "@quarkly/components";
+import { Override, StackItem, Stack, Section } from "@quarkly/components";
 import * as Components from "components";
-import { MdMenu } from "react-icons/md";
 export default (() => {
 	return <Theme theme={theme}>
 		<Helmet>
@@ -17,116 +16,7 @@ export default (() => {
 			<meta property={"og:image"} content={"https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/website-example-quarkly.png?v=2020-11-05T19:48:01.806Z"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Section
-			margin="0 0 0 0"
-			padding="16px 0px 16px 0px"
-			box-sizing="border-box"
-			quarkly-title="Header"
-			justify-content="center"
-		>
-			<Override
-				slot="SectionContent"
-				min-width="auto"
-				width="100%"
-				margin="0px 32px 0px 32px"
-				md-margin="0px 16px 0px 16px"
-			/>
-			<Stack>
-				{"    "}
-				<StackItem display="flex" quarkly-title="Logo" md-width="75%" width="25%">
-					<Override slot="StackItemContent" align-items="center" />
-					{"        "}
-					<Link href="/" position="relative" transition="opacity 200ms ease" quarkly-title="Link">
-						<Image src="https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-logo.svg?v=2020-11-06T17:26:21.226Z" width="120px" z-index="3" />
-					</Link>
-				</StackItem>
-				<StackItem width="50%" display="block" quarkly-title="Menu" md-width="25%">
-					<Override slot="StackItemContent" align-items="center" justify-content="center" md-justify-content="flex-end" />
-					{"        "}
-					<Components.BurgerMenu>
-						<Override
-							slot="menu"
-							lg-transform="translateY(0px) translateX(0px)"
-							lg-transition="transform 400ms ease 0s"
-							md-position="fixed"
-							display="flex"
-							md-left={0}
-							md-top={0}
-							md-width="100%"
-							md-height="100%"
-							padding="0px 0 0px 0"
-						>
-							<Override
-								slot="item"
-								text-transform="uppercase"
-								text-align="center"
-								padding="8px 20px 8px 20px"
-								md-padding="16px 40px 16px 40px"
-							/>
-							<Override slot="item-404" lg-display="none" display="none" />
-							<Override slot="item-index" lg-display="none" display="none" />
-							<Override
-								slot="link"
-								md-color="--dark"
-								md-opacity=".5"
-								md-transition="opacity .15s ease 0s"
-								md-hover-opacity="1"
-								md-active-opacity="1"
-								md-font="16px/24px sans-serif"
-								font="--base"
-								text-decoration-line="initial"
-								color="--dark"
-								opacity=".5"
-								transition="opacity .15s ease 0s"
-								hover-opacity="1"
-								letter-spacing="0.5px"
-								text-transform="initial"
-							/>
-							<Override
-								slot="link-active"
-								md-opacity="1"
-								md-cursor="default"
-								opacity="1"
-								color="--primary"
-								cursor="default"
-							/>
-						</Override>
-						<Override slot="icon,icon-close" category="md" icon={MdMenu} />
-						<Override slot="icon" category="md" icon={MdMenu} size="36px" />
-						<Override
-							slot="menu-open"
-							md-top={0}
-							md-bottom={0}
-							md-display="flex"
-							md-flex-direction="column"
-							md-align-items="center"
-							md-justify-content="center"
-						/>
-						<Override slot="icon-open" md-position="fixed" md-top="24px" md-right="calc(4% + 4px)" />
-					</Components.BurgerMenu>
-					{"    "}
-				</StackItem>
-				<StackItem display="flex" quarkly-title="Side" width="25%" md-display="none">
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-end" />
-					<Button
-						padding="8px 18px 8px 18px"
-						font="--base"
-						letter-spacing="0.5px"
-						z-index="5"
-						background="--color-primary"
-						md-display="none"
-						white-space="nowrap"
-						border-radius="0px"
-						hover-transform="translateY(-4px)"
-						transition="transform --transitionDuration-fast --transitionTimingFunction-easeInOut 0s"
-					>
-						Contact Us
-					</Button>
-					{"   "}
-				</StackItem>
-				{"    "}
-			</Stack>
-		</Section>
+		<Components.Header />
 		<Section quarkly-title="Hero" padding="25px 0 75px 0" lg-padding="25px 0 25px 0" justify-content="center">
 			<Override
 				slot="SectionContent"
@@ -143,7 +33,7 @@ export default (() => {
 						align-items="center"
 						justify-content="center"
 						height="480px"
-						background="radial-gradient(at center,--color-darkL2 23.3%,rgba(0,0,0,0) 82.4%),linear-gradient(180deg,rgba(155, 108, 252, 0.15) 0%,transparent 100%) 0 0 no-repeat,--color-darkL2"
+						background="url(),radial-gradient(at center,--color-darkL2 23.3%,rgba(0,0,0,0) 82.4%),linear-gradient(180deg,rgba(155, 108, 252, 0.15) 0%,transparent 100%) 0 0 no-repeat,--color-darkL2"
 						sm-height="180px"
 						md-height="360px"
 					/>
@@ -439,7 +329,7 @@ export default (() => {
 						align-items="center"
 						justify-content="center"
 						height="480px"
-						background="linear-gradient(180deg,rgba(24, 29, 34, 0.5) 0%,transparent 100%) 0 0 no-repeat,--color-lightD1 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-fireworks.svg?v=2020-11-06T17:22:27.801Z) center center/cover no-repeat"
+						background="linear-gradient(180deg,rgba(24, 29, 34, 0.5) 0%,transparent 100%) 0 0 no-repeat,--color-lightD1 url(https://images.unsplash.com/photo-1473773508845-188df298d2d1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30&w=2000) center center/cover no-repeat"
 						flex-direction="column"
 						md-height="360px"
 						padding="36px 24px 36px 24px"
@@ -454,7 +344,7 @@ export default (() => {
 						color="--light"
 						md-font="--headline3"
 					>
-						Make It Work.
+						Get started today.
 					</Text>
 					<Text
 						margin="0px 0px 28px 0px"
@@ -465,77 +355,15 @@ export default (() => {
 						color="--light"
 						max-width="720px"
 					>
-						Good design adds value faster than it adds cost.
+						Get started with Fresh Offset to become carbon-neutral by the end of the month.
 					</Text>
-					<Button
-						padding="8px 36px 8px 36px"
-						font="--lead"
-						letter-spacing="0.5px"
-						transition="opacity .15s ease 0s"
-						position="relative"
-						z-index="5"
-						background="--color-light"
-						opacity="1"
-						hover-opacity=".85"
-						focus-box-shadow="none"
-						hover-box-shadow="none"
-						active-box-shadow="none"
-						margin="10px auto 0px auto"
-						width="fit-content"
-						md-font="--base"
-						color="--darkL2"
-					>
-						Start Now
-					</Button>
+					<Components.LinkBtn />
 					{"    "}
 				</StackItem>
 				{"    "}
 			</Stack>
 		</Section>
-		<Section
-			margin="0 0 0 0"
-			padding="16px 0 16px 0"
-			box-sizing="border-box"
-			quarkly-title="Footer"
-			justify-content="center"
-		>
-			<Override
-				slot="SectionContent"
-				width="100%"
-				margin="0px 32px 0px 32px"
-				md-margin="0px 16px 0px 16px"
-				min-width="auto"
-			/>
-			<Stack>
-				{"    "}
-				<StackItem display="flex" quarkly-title="Logo" md-width="50%" width="25%">
-					<Override slot="StackItemContent" align-items="center" />
-					<Image width="28px" height="28px" src="https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-quarkly-logo-grey.svg?v=2020-11-06T17:24:35.270Z" />
-					<Link
-						href="https://quarkly.io/"
-						font="--base"
-						color="--dark"
-						opacity="0.6"
-						text-decoration-line="initial"
-						text-align="left"
-						margin="1px 0px 0px 10px"
-						hover-text-decoration-line="underline"
-					>
-						Made on Quarkly
-					</Link>
-					{"        "}
-				</StackItem>
-				<StackItem display="flex" quarkly-title="Side" width="75%" md-width="50%">
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-end" />
-					<SocialMedia facebook="https://www.facebook.com/quarklyapp/" twitter="https://twitter.com/quarklyapp" youtube="https://www.youtube.com/channel/UCK5bXs2L0bbSMQ82BQ3hIkw">
-						<Override slot="link" background="none" border-radius="50%" />
-						<Override slot="icon" color="--dark" />
-					</SocialMedia>
-					{"   "}
-				</StackItem>
-				{"    "}
-			</Stack>
-		</Section>
+		<Components.Footer />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
