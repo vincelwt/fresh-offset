@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 import { Override, Section, StackItem, Stack } from "@quarkly/components";
 import * as Components from "components";
 import { FiUsers } from "react-icons/fi";
-import { GiClockwiseRotation, GiPineTree } from "react-icons/gi";
+import { GiCarnyx, GiPineTree } from "react-icons/gi";
 import { DiBootstrap, DiBingSmall, DiCssTricks, DiEnvato, DiGithubBadge } from "react-icons/di";
 export default (() => {
 	return <Theme theme={theme}>
@@ -242,7 +242,7 @@ export default (() => {
 				</StackItem>
 				<StackItem width="33.33%" md-width="100%">
 					<Override slot="StackItemContent" flex-direction="column" />
-					<Icon category="gi" icon={GiClockwiseRotation} size="60px" />
+					<Icon category="gi" icon={GiCarnyx} size="60px" />
 					<Text as="h3" font="--headline2" margin="12px 0" xl-font="--headline2">
 						2.
 					</Text>
@@ -906,5 +906,27 @@ export default (() => {
 		<Components.Footer>
 			<Override slot="text" />
 		</Components.Footer>
+		<Link
+			font={"--capture"}
+			font-size={"10px"}
+			position={"fixed"}
+			bottom={"12px"}
+			right={"12px"}
+			z-index={"4"}
+			border-radius={"4px"}
+			padding={"5px 12px 4px"}
+			background-color={"--dark"}
+			opacity={"0.6"}
+			hover-opacity={"1"}
+			color={"--light"}
+			cursor={"pointer"}
+			transition={"--opacityOut"}
+			quarkly-title={"Badge"}
+			text-decoration-line={"initial"}
+			href={"https://quarkly.io/"}
+			target={"_blank"}
+		>
+			Made on Quarkly
+		</Link>
 	</Theme>;
 });

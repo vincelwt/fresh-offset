@@ -9,7 +9,8 @@ export default {
 				"5fa6fdfc88062c001f4a6c05",
 				"5fa6fdfc88062c001f4a6c0d",
 				"5fa6fff0badc03001fb0abce",
-				"5fa736fdb83a2f001f2d68a6"
+				"5fa736fdb83a2f001f2d68a6",
+				"5fa7dab8b1c8af001eb4c2a0"
 			]
 		},
 		"5fa6fdfc88062c001f4a6c03": {
@@ -50,6 +51,11 @@ export default {
 			"id": "5fa736fdb83a2f001f2d68a6",
 			"pageUrl": "signup1",
 			"name": "Log In"
+		},
+		"5fa7dab8b1c8af001eb4c2a0": {
+			"id": "5fa7dab8b1c8af001eb4c2a0",
+			"pageUrl": "dashboard",
+			"name": "Dashboard"
 		}
 	},
 	"mode": "production",

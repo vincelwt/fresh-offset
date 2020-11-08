@@ -30,15 +30,11 @@ export default (() => {
 						letter-spacing="1px"
 						text-transform="uppercase"
 					>
-						SIGN UP
+						Log in{" "}
 					</Text>
 					<Text as="h2" margin="12px 0 40px 0" font="--headline2" md-font="--headline3">
-						You are one step away from being carbon neutral.
+						Welcome back.
 					</Text>
-					<Text>
-						Your Company
-					</Text>
-					<Input placeholder="Awesome Inc." type="text" />
 					<Text>
 						Email
 					</Text>
@@ -47,8 +43,8 @@ export default (() => {
 						Password
 					</Text>
 					<Input placeholder="*******" type="password" name="password" />
-					<Button margin="20px 1.1764705181121826px 1.1764705181121826px 1.1764705181121826px">
-						Sign Up
+					<Button margin="30px 1.1764705181121826px 1.1764705181121826px 1.1764705181121826px">
+						Log In
 					</Button>
 				</StackItem>
 				<StackItem width="50%" lg-width="100%">
